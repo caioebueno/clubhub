@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Typo Black';
+    src: url('../public/fonts/black.otf');
+}
+
+body {
+    font-family: 'Typo Black';
+}
+
+#__next{
+    height: 100%;
+}
