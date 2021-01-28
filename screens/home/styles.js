@@ -13,10 +13,12 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     font-size: 59px;
+    transition: all 0.4s ease;
 `
 
 export const SubTitle = styled.h2`
     font-size: 30px;
+    transition: all 0.4s ease;
 `
 
 export const Row = styled.div`
@@ -25,12 +27,15 @@ export const Row = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
+    transition: all 0.4s ease;
 `
 
 export const Item = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.4s ease;
+    transition: all 0.4s ease;
 `
 export const ItemText = styled.h4`
     text-align: center;
@@ -38,8 +43,10 @@ export const ItemText = styled.h4`
     ${(props) => props.blue && `
         color: #0378B9;
     `}
+    transition: all 0.4s ease;
 `
 
 export const IconContainer = styled.div`
     height: 150px;
+    transition: all 0.4s ease;
 `

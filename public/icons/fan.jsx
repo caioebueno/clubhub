@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Fan = () => {
+const Fan = (props) => {
     return (
-        <svg width="163" height="154" viewBox="0 0 163 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={props.small ? '50' : "163"} height={props.small ? '50' : "154"} viewBox="0 0 163 154" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>
                 <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="-0.999878" y="52.1887" width="138" height="82" fill="black">
                     <rect fill="white" x="-0.999878" y="52.1887" width="138" height="82"/>
