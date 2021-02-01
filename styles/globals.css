@@ -19,3 +19,7 @@ input:focus {
     color: #161D28;
     opacity: 0.7;
 }
+
+button:focus{
+    outline: none;
+}

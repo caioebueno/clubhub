@@ -50,3 +50,10 @@ export const IconContainer = styled.div`
     height: 150px;
     transition: all 0.4s ease;
 `
+
+export const StyledText = styled.span`
+    background-color: #0378B9;
+    border-radius: 5px;
+    padding: 0px 4px 0px 4px;
+    color: #161D28;
+`
