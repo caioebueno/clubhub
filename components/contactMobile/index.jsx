@@ -40,7 +40,7 @@ function Contact(props) {
                 }
             }}
             style={show ? {} : {
-                transform: 'translateY(81vh)'
+                transform: 'translateY(91%)'
             }}
         >
             <Row style={{
