@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     background-color: #0378B9;
-    min-height: 88%;
+    height: 88%;
     width: 100vw;
     transition: all 0.5s ease;
     display: flex;

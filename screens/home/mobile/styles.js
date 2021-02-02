@@ -14,6 +14,7 @@ export const Title = styled.h1`
     font-size: 38px;
     text-align: left;
     margin-top: 50px;
+    align-self: flex-start;
 `
 
 export const SubTitle = styled.h3`
