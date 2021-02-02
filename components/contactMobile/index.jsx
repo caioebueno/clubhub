@@ -36,7 +36,7 @@ function Contact(props) {
             onClick={() => {
                 if (show === false) {
                     setShow(true)
-
+                    document.body.style.overflow='hidden'
                 }
             }}
             style={show ? {} : {
@@ -50,6 +50,8 @@ function Contact(props) {
             }}
             onClick={() => {
                 setShow(false)
+                document.body.style.overflow='scroll'
+
             }}
             >
                 <Label
