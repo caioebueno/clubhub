@@ -22,8 +22,14 @@ function Contact(props) {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [media, setMedia] = useState('')
-    const [mediaCount, setMediaCount] = useState([{}, {}, {}])
+    const [mediaCount, setMediaCount] = useState([{ label: '', value: '', id: 0 }])
     const [message, setMessage] = useState('')
+
+    const deleteMedia = (id) => {
+        console.log(id)
+        const newMeidas = mediaCount.filter(item => item.id !== id)
+        setMediaCount(newMeidas)
+    }
 
     return (
         <Container
@@ -34,7 +40,7 @@ function Contact(props) {
                 }
             }}
             style={show ? {} : {
-                transform: 'translateY(92vh)'
+                transform: 'translateY(81vh)'
             }}
         >
             <Row style={{
@@ -122,6 +128,16 @@ function Contact(props) {
                         display: 'flex',
                         marginLeft: 10
                     }}
+                    onClick={() => {
+                        if (mediaCount.length < 3) {
+                            setMediaCount([
+                                ...mediaCount,
+                                { label: '', value: '', id: mediaCount.length }
+                            ])
+
+
+                        }
+                    }}
                 >
                     <AddCircleOutlineIcon style={{
                         color: '#050608',
@@ -160,6 +176,9 @@ function Contact(props) {
                         />
                         <div
                             style={{marginTop: 15}}
+                            onClick={() => {
+                                deleteMedia(item.id)
+                            }}
                         >
                             <DeleteOutlineIcon style={{
                                 color: 'black',
