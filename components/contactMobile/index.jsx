@@ -33,17 +33,12 @@ function Contact(props) {
 
     return (
         <Container
-            onClick={() => {
-                if (show === false) {
-                    setShow(true)
-                    document.body.style.overflow='hidden'
-                }
-            }}
-            style={show ? {} : {
-                transform: 'translateY(91%)'
-            }}
+            
+            // style={show ? {} : {
+            //     transform: 'translateY(91%)'
+            // }}
         >
-            <Row style={{
+            {/* <Row style={{
                 alignItems: 'center',
                 marginTop: '2.5vh',
                 marginLeft: 10
@@ -66,7 +61,7 @@ function Contact(props) {
                 >
                     <Arrow />
                 </div>
-            </Row>
+            </Row> */}
             <span
                 style={{
                     color: '#050608',
@@ -78,7 +73,8 @@ function Contact(props) {
                 style={{
                     color: '#050608',
                     fontSize: 25,
-                    marginTop: 15
+                    marginTop: 15,
+                    marginBottom: 20
                 }}
             >Lets Grow Together</span>
             <TextField

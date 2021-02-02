@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    position: sticky;
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: #0378B9;
     height: 88%;
     width: 100vw;
+    margin-top: 50px;
     transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
