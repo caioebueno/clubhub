@@ -24,7 +24,8 @@ export default class MyDocument extends Document {
         return (
             <html>
                 <Head>
-                    <title>My page</title>
+                    <title>Monetize your content</title>
+                    <link rel="shortcut icon"  href="/favicon.ico" />
                     {/* Step 5: Output the styles in the head  */}
                     {this.props.styleTags}
                 </Head>
