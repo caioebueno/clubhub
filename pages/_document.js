@@ -26,7 +26,6 @@ export default class MyDocument extends Document {
                 <Head>
                     <title>Monetize your content</title>
                     <link rel="shortcut icon"  href="/favicon.ico" />
-                    {/* Step 5: Output the styles in the head  */}
                     {this.props.styleTags}
                 </Head>
                 <body>
